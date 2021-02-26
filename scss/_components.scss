@@ -913,7 +913,7 @@ h5  .button{
       }
 
       .btn--width:not(:last-child) {
-            margin-top: 5rem !important;
+            // margin-top: 5rem !important;
             
       }
 
@@ -924,6 +924,14 @@ h5  .button{
             
       }
 
+      .bot {
+            display: flex;
+      }
+
+      .btn--white {
+            margin-left: auto;
+      }
+
       
 }
 
@@ -932,15 +940,10 @@ h5  .button{
             padding: 1rem 2.5rem;
             width: 45%;
 
-            
-
-
-
-
       }
 
       .btn--width:not(:last-child) {
-            float: left;
+            // float: left;
       }
 
       .btn--blue {
@@ -949,7 +952,7 @@ h5  .button{
       .btn--white {
             margin-top: 1rem !important;
 
-            float: right;
+            // float: right;
       }
       .main__image {
             top:-2rem;
@@ -960,6 +963,24 @@ h5  .button{
             // margin-right: 0 !important;
       }
 
+      .features__image {
+            top: 12rem;
+            padding: 0 !important;
+      }
+
+      .button {
+            font-size: 1.2rem;
+      }
+
+      .main__image {
+            padding: 0  !important;
+
+            width: 50rem;
+      }
+
+      .bg-overlay {
+            width: 100%;
+      }
       
 }
 

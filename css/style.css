@@ -647,24 +647,33 @@ h5 .button {
 @media only screen and (max-width: 400px) {
   .main__image {
     top: -3rem; }
-  .btn--width:not(:last-child) {
-    margin-top: 5rem !important; }
   .btn--width {
     /* width: 100%; */
-    width: 50%; } }
+    width: 50%; }
+  .bot {
+    display: flex; }
+  .btn--white {
+    margin-left: auto; } }
 
 @media only screen and (max-width: 425px) {
   .btn--width {
     padding: 1rem 2.5rem;
     width: 45%; }
-  .btn--width:not(:last-child) {
-    float: left; }
   .btn--blue {
     margin-right: 0rem !important; }
   .btn--white {
-    margin-top: 1rem !important;
-    float: right; }
+    margin-top: 1rem !important; }
   .main__image {
     top: -2rem; }
   .btn--blue--small {
-    text-align: center; } }
+    text-align: center; }
+  .features__image {
+    top: 12rem;
+    padding: 0 !important; }
+  .button {
+    font-size: 1.2rem; }
+  .main__image {
+    padding: 0  !important;
+    width: 50rem; }
+  .bg-overlay {
+    width: 100%; } }
