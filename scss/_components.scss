@@ -319,6 +319,11 @@
 
             right: -10%;
       }
+
+      @include respond (phone) {
+            top: -10rem;
+
+      }
 }
 
 .bg-overlay {
@@ -394,6 +399,8 @@
       @media only screen and (max-width: 990px) {
             width: 45rem;
       }
+
+     
 
       // object-fit: cover;
 }
@@ -546,9 +553,9 @@ h5  .button{
       color: $grayish-blue;
       height: 50%;
 
-      @media only screen and (max-width:1024px){
-            
-      }
+      border-radius: 5px;
+
+
             
 }
 
@@ -684,6 +691,22 @@ h5  .button{
       opacity: 0;
 }
 
+.main__image {
+      @include respond(phone) {
+            top:-10rem;
+
+            right: 2rem;
+      }
+}
+
+.bg-overlay {
+
+      @include respond(phone) {
+            width: 95%;
+      }
+      
+}
+
 
 @media only screen and (max-width: 767px) {
       .menu-nav {
@@ -751,7 +774,7 @@ h5  .button{
       }
 
       .form__input {
-            height: 4rem;
+            height: 6rem;
       }
 
       .main__image {
@@ -869,6 +892,8 @@ h5  .button{
             width: 100%;
             left: 0;
             height: 100%;
+
+            right: 6rem;
       }
       .bg-overlay--left {
             bottom: 30rem;
@@ -893,7 +918,9 @@ h5  .button{
 
 @media only screen and (max-width:500px) {
       .main__image {
-            top: -9rem;
+            top: -4rem;
+
+            right: -1rem;
       }
 
       .btn--blue--small {
@@ -956,6 +983,8 @@ h5  .button{
       }
       .main__image {
             top:-2rem;
+
+            right: .5rem;
       }
 
       .btn--blue--small {

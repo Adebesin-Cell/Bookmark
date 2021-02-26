@@ -282,6 +282,9 @@ body {
   @media only screen and (max-width: 1024px) {
     .main__image {
       right: -10%; } }
+  @media only screen and (max-width: 37.5em) {
+    .main__image {
+      top: -10rem; } }
 
 .bg-overlay {
   position: absolute;
@@ -426,7 +429,8 @@ h5 .button {
 .form__input {
   font-size: 1.3rem;
   color: #9194a1;
-  height: 50%; }
+  height: 50%;
+  border-radius: 5px; }
 
 .footer-logo-box {
   margin-right: 5rem; }
@@ -518,6 +522,15 @@ h5 .button {
   visibility: hidden;
   opacity: 0; }
 
+@media only screen and (max-width: 37.5em) {
+  .main__image {
+    top: -10rem;
+    right: 2rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .bg-overlay {
+    width: 95%; } }
+
 @media only screen and (max-width: 767px) {
   .menu-nav {
     display: none; }
@@ -557,7 +570,7 @@ h5 .button {
   .main {
     order: 0; }
   .form__input {
-    height: 4rem; }
+    height: 6rem; }
   .main__image {
     top: -15rem;
     /* width: 60%; */ }
@@ -624,7 +637,8 @@ h5 .button {
   .features__image {
     width: 100%;
     left: 0;
-    height: 100%; }
+    height: 100%;
+    right: 6rem; }
   .bg-overlay--left {
     bottom: 30rem;
     width: 95%; }
@@ -637,7 +651,8 @@ h5 .button {
 
 @media only screen and (max-width: 500px) {
   .main__image {
-    top: -9rem; }
+    top: -4rem;
+    right: -1rem; }
   .btn--blue--small {
     margin-top: 7rem !important; }
   .text {
@@ -657,14 +672,15 @@ h5 .button {
 
 @media only screen and (max-width: 425px) {
   .btn--width {
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
     width: 45%; }
   .btn--blue {
     margin-right: 0rem !important; }
   .btn--white {
     margin-top: 1rem !important; }
   .main__image {
-    top: -2rem; }
+    top: -2rem;
+    right: .5rem; }
   .btn--blue--small {
     text-align: center; }
   .features__image {
