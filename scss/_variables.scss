@@ -1,0 +1,44 @@
+////////////\///////
+////colors
+
+$soft-blue: hsl(231, 69%, 60%);
+
+$soft-red: hsl(0, 94%, 66%);
+
+$grayish-blue: hsl(229, 8%, 60%);
+
+$v-dark-blue:hsl(229, 31%, 21%);
+
+$white: #Fff;
+
+
+////////////\///////
+////fonts
+
+$default: 1.8rem;
+
+$weight: 400;
+$weight-lg: 500;
+
+
+
+////////////\///////
+////utilities
+
+.u-mt-sm {
+      margin-top: 2rem;
+}
+
+.u-mt-lg {
+      margin-top: 6rem;
+}
+
+.text--center {
+
+
+      text-align: center;
+}
+
+.u-mb-sm {
+      margin-bottom: 2rem;
+}

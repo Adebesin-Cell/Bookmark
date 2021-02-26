@@ -1,0 +1,86 @@
+.menu {
+      display: flex;
+
+      justify-content: space-between;
+}
+
+
+.section-about {
+      margin-top: 5%;
+
+      position: relative;
+}
+.main {
+      display: flex;
+
+      justify-content: flex-end;
+
+      
+}
+
+.section-features {
+      margin-top: 20%;
+
+      margin-bottom: 3%;
+}
+
+.section-extension {
+      margin-top: 35%;
+
+      @media only screen and (max-width: 767px) {
+            margin-top: 20%;
+          }
+
+}
+
+.section-faq {
+      margin-top: 6%;
+}
+
+.extensions {
+      margin-top: 10rem !important;
+
+      @media only screen and (max-width: 767px) {
+            margin-top: 5rem  !important;
+          }
+}
+
+.section-invite {
+      margin-top: 6%;
+
+      color: $white;
+
+      text-align: center;
+
+      background-color: $soft-blue;
+
+      padding-top: 10rem;
+
+      padding-bottom: 10rem;
+}
+
+.footer {
+      background-color: $v-dark-blue;
+
+      @media only screen and (max-width: 767px) {
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+          }
+}
+
+.overview {
+      display: flex;
+
+      justify-items: center;
+
+      align-items: center;
+      @media only screen and (max-width:450px) {
+            flex-direction: column;
+      }
+}
+
+.feat { 
+      @media only screen and (max-width:710px) {
+            min-height: 40rem;
+      }
+}

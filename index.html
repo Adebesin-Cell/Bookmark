@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A landing page for bookmark. Bookmark is an extendion that helps to your favourite website in a clean and orderly">
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Frontend Mentor | Bookmark landing page</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="menu-bar" id="nav">
+            <div class="container">
+                <svg class="menu-logo">
+                    <use xlink:href = "images/sprite.svg#logo-bookmark-2"></use>
+                </svg>
+
+                <ul class="menu-bar__nav">
+                    <li class="menu-bar__item"><a href="#" class="menu-bar__link">Pricing</a></li>
+                    <li class="menu-bar__item"><a href="#" class="menu-bar__link">Products</a></li>
+                    <li class="menu-bar__item"><a href="#" class="menu-bar__link">ContactUs</a></li>
+
+                    <li class="menu-bar__item"><a href="#" class="btn btn--transparent">Login</a></li>
+                </ul>
+
+                <button name="button" class="close" id="close">
+                    <img src="images/icon-close.svg" alt="Close bar">
+                </button>
+            </div>
+           
+        </div>
+        <div class="container-fluid">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="menu">
+                            <div class="logo-box">
+                                <svg class="logo">
+                                    <use xlink:href="images/sprite.svg#logo-bookmark"></use>
+                                </svg>
+                            </div>
+
+                            <button name = "button" class="open" id="open">
+                                <img src="images/icon-hamburger.svg" alt="icon open">
+                            </button>
+
+
+                            <div class="menu-nav">
+                                <ul class="menu-nav__list">
+                                    <li class="menu-nav__item"><a href="#" class="menu-nav__link">Features</a></li>
+                                    <li class="menu-nav__item"><a href="#" class="menu-nav__link">pricing</a></li>
+                                    <li class="menu-nav__item"><a href="#" class="menu-nav__link">contact</a></li>
+                                    <li class="menu-nav__item"><a href="#" class="btn btn--red">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <section class="container section-about">
+                <div class="row">
+                    <div class="col-md-5 texts">
+                        <h1 class="heading-primary">
+                            A Simple Bookmark Manager
+                        </h1>
+
+                        <p class="paragraph mt-3">
+                            A clean and simple interface to organize your favourite websites. Open a new browser
+						tab and see your sites load instantly. Try it for free.
+                        </p>
+
+                        <a href="#" class="btn btn--blue btn--width mt-3">Get it on chrome</a>
+                        <a href="#" class="btn btn--white btn--width mt-3">Get it on Firefox</a>
+                    </div>
+                    <div class="col-md-7 main">
+
+                        <img src="images/illustration-hero.svg" class="main__image" alt="Hero image">
+                       <!--  <svg class="main__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="657" height="466"><defs><filter id="a" width="118%" height="126.9%" x="-9%" y="-5.7%" filterUnits="objectBoundingBox"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/><feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter><rect id="c" width="578" height="385" rx="26"/><filter id="b" width="126%" height="139%" x="-13%" y="-11.7%" filterUnits="objectBoundingBox"><feOffset dy="30" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.18243335 0 0 0 0 0.230632694 0 0 0 0 0.506057518 0 0 0 0.200120192 0"/></filter><linearGradient id="d" x1="99.013%" x2="2.544%" y1="71.675%" y2="29.014%"><stop offset="0%" stop-color="#151515"/><stop offset="100%" stop-color="#3D3D3D"/></linearGradient><rect id="e" width="536" height="346" y="3" rx="8"/></defs><g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(39 9)"><g transform="translate(.5 .5)"><g fill-rule="nonzero"><use fill="#000" filter="url(#b)" xlink:href="#c"/><use fill="#777" xlink:href="#c"/></g><rect width="574.23" height="381.865" x="2" y="2" fill="url(#d)" fill-rule="nonzero" rx="25"/><g transform="translate(21.03 16.303)"><rect width="471.463" height="353.756" x="33" fill="#2A2A2A" fill-rule="nonzero" opacity=".1" rx="5"/><mask id="f" fill="#fff"><use xlink:href="#e"/></mask><use fill="#E8EAF6" fill-rule="nonzero" xlink:href="#e"/><g mask="url(#f)"><path fill="#5267DF" d="M-3.53 3.197h547v59h-547z"/><g transform="translate(22.47 17.197)" fill="#FFF"><circle cx="16" cy="16" r="16" opacity=".245"/><circle cx="477" cy="16" r="16" opacity=".104"/><g transform="translate(47 6)"><rect width="120" height="6" opacity=".75" rx="3"/><rect width="64" height="6" y="14" opacity=".25" rx="3"/></g></g></g><g mask="url(#f)"><g transform="translate(57 96)"><rect width="261" height="316" fill="#FFF" rx="8"/><rect width="128" height="316" x="295" fill="#FFF" rx="8"/><rect width="120" height="6" x="78.47" y="38.197" fill="#242A45" opacity=".5" rx="3"/></g></g></g></g><g transform="translate(110 135)"><circle cx="16" cy="26" r="16" fill="#F98E5D"/><rect width="88" height="6" x="284" fill="#242A45" opacity=".25" rx="3"/><rect width="88" height="6" x="284" y="20" fill="#242A45" opacity=".25" rx="3"/><rect width="88" height="6" x="284" y="40" fill="#242A45" opacity=".25" rx="3"/><rect width="88" height="6" x="284" y="60" fill="#242A45" opacity=".25" rx="3"/><rect width="88" height="6" x="284" y="94" fill="#242A45" opacity=".25" rx="3"/><rect width="88" height="6" x="284" y="114" fill="#242A45" opacity=".25" rx="3"/><rect width="88" height="6" x="284" y="134" fill="#242A45" opacity=".25" rx="3"/><rect width="64" height="6" x="47" y="30" fill="#242A45" opacity=".25" rx="3"/></g><g transform="translate(110 201)"><circle cx="16" cy="16" r="16" fill="#6AC6D6"/><rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3"/><rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3"/></g><g transform="translate(110 257)"><circle cx="16" cy="16" r="16" fill="#A47ED4"/><rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3"/><rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3"/></g><g transform="translate(110 313)"><circle cx="16" cy="16" r="16" fill="#EC7878"/><rect width="120" height="6" x="47" y="6" fill="#242A45" opacity=".5" rx="3"/><rect width="64" height="6" x="47" y="20" fill="#242A45" opacity=".25" rx="3"/></g></g></svg> -->
+                    </div>
+                    <div class="bg-overlay"></div>
+                </div>
+            </section>
+
+            <section class="container section-features">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="heading-secondary text-center">
+                            Features
+                        </h2>
+                        <div class="col-md-6 offset-md-3 mt-3">
+                            <p class="text-center paragraph--color">Our aim is to make it quick and easy for you to access your favourite
+                                websites. Your bookmark sync between your devices so you can access them on the go.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills mb-3 text-center mx-auto" id="pills-tab" role="tablist">
+                            <li class="nav-item ml-0">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Simple Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Speedy Searching</a>
+                            </li>
+                            <li class="nav-item mr-0">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Easy Sharing</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="col-md-12">
+                        <!-- Tab panes -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="row mt-5">
+                                    <div class="col-md-7 feat">
+
+                                        <img src="images/illustration-features-tab-1.svg" alt="illustrtaion image" class="features__image">
+                                        <!-- <svg class="features__image"> -->
+                                            <!-- <use xlink:href = "images/sprite.svg#illustration-features-tab-1"></use> -->
+                                        <!-- </svg> -->
+                                    </div>
+                                    <div class="col-md-5 features__right">
+                                        <h2 class="heading-secondary">
+                                            Bookmark in one click
+                                        </h2>
+
+                                        <p class="text mt-5">
+                                           
+                                            Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                                            gives you complete control over how you manage your favourite sites.  
+                                        </p>
+
+                                        <a href="#" class="btn mt-3 btn--info">more info</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="row mt-5">
+                                    <div class="col-md-7 feat">
+
+                                        <img src="images/illustration-features-tab-2.svg" alt="illustration" class="features__image">
+                                        <!-- <svg class="features__image"> -->
+                                            <!-- <use xlink:href = "images/sprite.svg#illustration-features-tab-2"></use> -->
+                                        <!-- </svg> -->
+                                    </div>
+                                    <div class="col-md-5 features__right">
+                                        <h2 class="heading-secondary">
+                                            Intelligent Search
+                                        </h2>
+
+                                        <p class="text mt-5">
+                                            Our powerful search feature will help you find saved sites in no time at all. 
+                                            No need to trawl through all of your bookmarks.
+                                        </p>
+                                        <a href="#" class="btn mt-3 btn--info">more info</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class="row mt-5">
+                                    <div class="col-md-7 feat">
+                                        <img src="images/illustration-features-tab-3.svg" alt="illustration image" class="features__image">
+                                        <!-- <svg class="features__image"> -->
+                                            <!-- <use xlink:href = "images/sprite.svg#illustration-features-tab-3"></use> -->
+                                        <!-- </svg> -->
+                                    </div>
+                                    <div class="col-md-5 features__right">
+                                        <h2 class="heading-secondary">
+                                            Share your bookmarks
+
+                                        </h2>
+
+                                        <p class="text mt-5">
+                                            Easily share your bookmarks and collections with others. Create a shareable 
+                                            link that you can send at the click of a button.
+                                        </p>
+                                        <a href="#" class="btn mt-3 btn--info">more info</a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class=" bg-overlay--left">
+
+                          </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container section-extension">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <h2 class="heading-secondary text-center">
+                            Download the extension
+                        </h2>
+                        <div class="col-md-6 offset-md-3 mt-3">
+                            <p class="text-center paragraph--color"> We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                                got a favourite you’d like us to prioritize.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5 mb-5 extensions">
+                    <div class="col-md-4">
+                        <div class="card">
+                            
+
+                            <div class="card-body text-center">
+                                <svg class="card__image u-mt-lg">
+                                    <use xlink:href = "images/sprite.svg#logo-chrome"></use>
+                                </svg>
+                                <h3 class="heading-tertiary">
+                                    Add to Chrome
+                                </h3>
+
+                                <p class="text u-mt-sm">
+                                    Minimum version 62
+                                </p>
+                            </div>
+
+                            <svg class="bg-dots">
+                                <use xlink:href = "images/sprite.svg#bg-dots"></use>
+                            </svg>
+
+                            <div class="card-body">
+                                <a href="#" class="btn btn--blue btn--extension">Add & Install Extension</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card--box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <svg class="card__image u-mt-lg">
+                                    <use xlink:href = "images/sprite.svg#logo-firefox"></use>
+                                </svg>
+                                <h3 class="heading-tertiary">
+                                    Add to Firefox
+                                </h3>
+
+                                <p class="text u-mt-sm">
+                                    Minimum version 55
+                                </p>
+                            </div>
+
+                            <svg class="bg-dots">
+                                <use xlink:href = "images/sprite.svg#bg-dots"></use>
+                            </svg>
+
+                            <div class="card-body">
+                                <a href="#" class="btn btn--blue btn--extension">Add & Install Extension</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card--box-1">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <svg class="card__image u-mt-lg">
+                                    <use xlink:href = "images/sprite.svg#logo-opera"></use>
+                                </svg>
+                                <h3 class="heading-tertiary">
+                                    Add to Opera
+                                </h3>
+
+                                <p class="text u-mt-sm">
+                                    Minimum version 46
+                                </p>
+                            </div>
+
+                            <svg class="bg-dots">
+                                <use xlink:href = "images/sprite.svg#bg-dots"></use>
+                            </svg>
+
+                            <div class="card-body">
+                                <a href="#" class="btn btn--blue btn--extension">Add & Install Extension</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container section-faq u-mt-lg">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3"> 
+                        <h2 class="heading-secondary text--center u-mb-sm u-mt-sm">
+                            Frequently Asked Questions
+                        </h2>
+
+                        <p class="text text--center u-mt-sm u-mb-sm">
+                            Here are some of our FAQs. If you have any other questions you’d like 
+                            answered please feel free to email us.
+                        </p>
+                        <div id="accordion">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 box">
+                                  <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Bookmark?
+
+                                        <svg class="icon">
+                                            <use xlink:href = "images/sprite.svg#icon-arrow"></use>
+                                        </svg>
+                                  </button>
+
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0 box">
+                                  <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I request a new browser?
+
+                                    <svg class="icon">
+                                        <use xlink:href = "images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+
+                                  </button>
+
+                                     
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0 box">
+                                  <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Is there a mobile app?
+
+                                    <svg class="icon">
+                                        <use xlink:href = "images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+
+                                  </button>
+                                   
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                                    sollicitudin ex et ultricies bibendum.
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0 box">
+                                    <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What about other Chromium browsers?
+                                        <svg class="icon">
+                                            <use xlink:href = "images/sprite.svg#icon-arrow"></use>
+                                        </svg>
+                                    </button>
+                                    
+                                  </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body">
+                                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                                    vitae neque eget nisl gravida pellentesque non ut velit.
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <a href="#" class="btn  btn--blue--small d-block mt-5 mx-auto">More Info</a>
+                         
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="row section-invite">
+                <div class="col-md-4 offset-md-4">
+                    <p class=" text--center">
+                        35,000+ already joined
+                    </p>
+
+                    <h1 class="heading-primary heading-primary--white">
+                        Stay up-to-date with what we’re doing
+                    </h1>
+
+                    <form action="#" class="form">
+                        <div class="form-row">
+                            <div class="col-md-8 u-form">
+                                <input type="email" name="email" id="email" class="form-control form__input" placeholder="Enter your email address" required>
+
+                                <span class="error">
+                                    <svg class="error_icon">
+                                        <use xlink:href = "images/sprite.svg#icon-error"></use>
+                                    </svg>
+                                </span>
+                                <span class="error-text">
+                                    Please enter a valid email address
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn--red btn--modify">Contact Us</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <footer class="row footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 overview">
+                            <div class="footer-logo-box">
+                                <svg class="footer__logo">
+                                    <use xlink:href ="images/sprite.svg#logo-bookmark-2"></use>
+                                </svg>
+                            </div>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Features</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Pricing</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Contact</a></li>
+                            </ul>
+
+                            <div class="social-icons">
+                                <svg class="footer__icon">
+                                    <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                <svg class="footer__icon">
+                                    <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="js/App.js"></script>
+    </body>
+</html>

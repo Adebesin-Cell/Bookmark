@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
+  @include respond(tab-port) {
+    font-size: 45%;
+  }
+
+  @include respond (bg-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-size: $default;
+  font-family: "Rubik", sans-serif;
+
+  font-weight: $weight;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: $soft-blue;
+  color: $white;
+}
+
+.container-fluid{
+  overflow-x: hidden;
+}
+.u-mt-sm {
+  margin-top: 2rem  !important;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 5rem !important;
+  }
+}
