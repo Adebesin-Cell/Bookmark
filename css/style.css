@@ -490,19 +490,21 @@ h5 .button {
   background-color: rgba(37, 43, 70, 0.9);
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
   transition: all .5s ease;
   z-index: 1000;
-  transition: all .4s; }
+  /* transition: all .4s; */
+
+  opacity: 0;
+  visibility: hidden;
+
+}
 
 .menu-logo {
   width: 15rem;
   height: 15rem; }
 
-.menu-bar {
-  opacity: 0;
-  visibility: hidden; }
 
 .error {
   display: block; }
